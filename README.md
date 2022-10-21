@@ -1,9 +1,6 @@
 # Süper Lig Puan Durumu API
 
-Luna Yazılım olarak hazırladığımız Türkiye Süper Ligi Puan Durumu API'nı ücretsiz olarak kullanabilirsiniz. API bağlantısı aşağıda verilmiştir. Örnek kullanım `index.php` dosyasında yer almaktadır.
-
-```
-  https://api.lunayazilim.com/standings.json
-```
-
-![Önizleme](https://emirtopaloglu.com.tr/wp-content/uploads/2022/06/stsl-puan.png)
+- Proje dosyalarını bir sunucuya yükleyin. (Ör: siteadi.com/puan/)
+- `puandurumu.php` dosyasına cron job atayın.
+- Cron job her çalıştığında yüklediğiniz dizinde `standings.json` dosyası yoksa oluşur, varsa güncellenir. (Ör: siteadi.com/puan/standings.json)
+- JSON dosyasını fetch ederek puan durumu verilerini kullanabilirsiniz.
